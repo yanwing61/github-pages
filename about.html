@@ -7,6 +7,10 @@
     <title>About | GitHub Pages</title>
   </head>
   <body>
+
+    <a href="index">HOME</a>
+    <a href="about">ABOUT</a>
+
     <h1>About me</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, animi,
@@ -15,6 +19,43 @@
       commodi.
     </p>
 
+    <a href="https://yanwing61.github.io/github-pages/">Home</a>
+
+    <!-- 
+        Browser: works as a link
+        local: No
+     -->
+
+    <a href="/github-pages/index.html">Home</a>
+     <!-- 
+        Browser: / = back to the same domain -> it works 
+        local: C:/github-pages/index.html -> search from root, not work
+     -->
+
+     <a href="/index.html">Home</a>
+     <!-- 
+        Browser: https://yanwing61.github.io/index.html -> it is not work without the folder
+        local: C:/index.html -> search from root, not work
+     -->
+
+     <h2>BEST METHOD!</h2>
+     <a href="index.html">Home</a>
+     <!-- 
+        Browser: https://yanwing61.github.io/github-pages/index.html -> Work!
+        local: current folder/index.html -> Work!
+     -->
+
+     <h2>Requires server like MAMP</h2>
+     <a href="index">Home</a>
+      <!-- 
+        Browser: https://yanwing61.github.io/github-pages/index -> Work!
+        local: current folder/index -> No
+     -->
+
+     <a href="github-pages/index.html">Home</a>
+
+
+    <img src="kapoo.jpeg" />
     <img src="kapoo.jpeg" />
   </body>
 </html>
